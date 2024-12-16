@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackmyth Wukong - Game Review | RateMyoGames</title>
+    <link rel="stylesheet" href="stylegame1.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="game1.html">Game 1</a></li>
+                <li><a href="game2.html">Game 2</a></li>
+                <li><a href="game3.html">Game 3</a></li>
+                <li><a href="index.html">Rate Games</a></li>
+            </ul>
+        </nav>
+        <h1>Blackmyth Wukong - Game Review</h1>
+    </header>
+    <main data-game="game1">
+        <section class="game-detail">
+            <div class="game-header">
+                <img src="blackmyth1.jpg" alt="Blackmyth Wukong" class="game-image">
+                <div>
+                    <h2>Blackmyth Wukong</h2>
+                    <p class="release-date"><strong>Release Date:</strong> February 15, 2024</p>
+                </div>
+            </div>
+            <article>
+                <h3>Overview</h3>
+                <p>
+                    <strong>Blackmyth Wukong</strong> is an action RPG inspired by the Chinese classic novel <em>Journey to the West</em>.
+                    In this visually stunning game, players take on the role of Sun Wukong, the legendary Monkey King, as they explore an open-world environment filled with mythological creatures.
+                    Featuring dynamic combat, deep lore, and breathtaking visuals, <strong>Blackmyth Wukong</strong> has quickly become a fan favorite among action RPG enthusiasts.
+                </p>
+            </article>
+            <article>
+                <h3>Gameplay</h3>
+                <p>
+                    The combat system in Blackmyth Wukong is fast-paced and challenging, requiring precise timing and quick reflexes.
+                    Wukong can transform into various creatures, each with unique abilities to overcome enemies and explore the game's expansive world.
+                    The game offers an immersive experience with diverse enemies, challenging boss battles, and engaging exploration mechanics.
+                </p>
+            </article>
+            <article>
+                <h3>Graphics & Visuals</h3>
+                <p>
+                    With state-of-the-art visuals powered by Unreal Engine, the game presents a beautifully crafted fantasy world.
+                    Ancient Chinese landscapes are blended with fantastical elements, creating a visually captivating environment.
+                    From Wukong's fur to the dynamic weather effects, every detail adds to the game's atmospheric realism.
+                </p>
+            </article>
+            <article>
+                <h3>System Requirements</h3>
+                <ul>
+                    <li><strong>OS:</strong> Windows 10 (64-bit)</li>
+                    <li><strong>Processor:</strong> Intel Core i7-9700K / AMD Ryzen 7 3700X</li>
+                    <li><strong>Memory:</strong> 16 GB RAM</li>
+                    <li><strong>Graphics:</strong> NVIDIA GeForce RTX 2070 / AMD Radeon RX 5700 XT</li>
+                    <li><strong>Storage:</strong> 50 GB available space</li>
+                </ul>
+            </article>
+        </section>
+        <!-- Comment Section -->
+        <section class="comments">
+            <h2>Comments</h2>
+            <form action="/submit-comment" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="comment">Comment:</label>
+                <textarea id="comment" name="comment" required></textarea>
+                <button type="submit">Post Comment</button>
+            </form>
+            <div id="comment-list">
+                <p>No comments yet.</p>
+            </div>
+        </section>
+                <!-- Social Share Section -->
+                <div class="social-share" style="position: fixed; bottom: 70px; right: 20px;">
+                    <p>Share on:</p>
+                    <a href="https://twitter.com/intent/tweet?text=Check%20out%20this%20awesome%20game%20Blackmyth%20Wukong!&url=http://www.yourwebsite.com/game1" target="_blank">
+                        <img src="images.png" alt="Share on Twitter" style="width: 32px; height: 32px;">
+                    </a>
+                </div>
+    </main>
+    <footer>
+        <p>© 2024 <a href="index.html">RateMyoGames</a>. All rights reserved.</p>
+    </footer>
+    <script src="comment.js"></script>
+</body>
+</html>

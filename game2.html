@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game 2 Review - RateMyoGames</title>
+    <link rel="stylesheet" href="stylegame2.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="game1.html">Game 1</a></li>
+                <li><a href="game2.html">Game 2</a></li>
+                <li><a href="game3.html">Game 3</a></li>
+                <li><a href="index.html">Rate Games</a></li>
+            </ul>
+        </nav>
+        <h1>Game 2 Review - Cyberpunk 2077</h1>
+    </header>
+    <main  data-game="game2">
+        <section class="game-detail">
+            <img src="cyberpunk 2077.jpg" alt="Game 2 Image" class="game-image">
+            <h2>Cyberpunk 2077</h2>
+            <p>
+                <strong>Cyberpunk 2077</strong> is an open-world, action-adventure RPG set in the dystopian Night City, 
+                a megacity obsessed with power, glamour, and body modification. Players assume the role of V, 
+                a mercenary searching for a unique implant that holds the key to immortality. 
+                The game offers expansive freedom of choice in character customization, story progression, 
+                and exploration of a visually stunning, highly detailed world.
+            </p>
+            <!-- More content here -->
+        </section>
+        <!-- Comment Section -->
+        <section class="comments">
+            <h2>Comments</h2>
+            <form action="/submit-comment" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="comment">Comment:</label>
+                <textarea id="comment" name="comment" required></textarea>
+                <button type="submit">Post Comment</button>
+                <script src="comment.js"></script>
+            </form>
+            <div id="comment-list">
+                <p>No comments yet.</p>
+            </div>
+        </section>
+                <!-- Social Share Section -->
+                <div class="social-share" style="position: fixed; bottom: 70px; right: 20px;">
+                    <p>Share on:</p>
+                    <a href="https://twitter.com/intent/tweet?text=Check%20out%20this%20awesome%20game%20Blackmyth%20Wukong!&url=http://www.yourwebsite.com/game1" target="_blank">
+                        <img src="images.png" alt="Share on Twitter" style="width: 32px; height: 32px;">
+                    </a>
+                </div>
+    </main>
+    <footer>
+        <p>© 2024 RateMyoGames. All rights reserved.</p>
+    </footer>
+    <script src="comment.js"></script> <!-- Assuming you have a comments.js for handling the comments -->
+</body>
+</html>

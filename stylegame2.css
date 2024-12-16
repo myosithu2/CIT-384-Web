@@ -1,0 +1,168 @@
+/* General body styling */
+body {
+    font-family: 'Orbitron', sans-serif; /* Futuristic font for consistency */
+    margin: 0;
+    padding: 0;
+    background-color: #021E37; /* Deep oceanic blue for darker atmosphere */
+    color: #00FFFF; /* Neon cyan for text */
+}
+
+/* Header styling */
+header {
+    background-color: #0A0A0A; /* Darker background for header */
+    color: #00FFFF; /* Neon cyan for header text */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 4px solid #FF00FF; /* Neon pink border for consistency */
+    box-shadow: 0 0 10px #FF00FF; /* Pink glow for header */
+}
+
+h1 {
+    margin: 0;
+    font-size: 3rem;
+    text-shadow: 0 0 15px #00FFFF, 0 0 30px #00FFFF; /* Glowing neon effect */
+}
+
+/* Navigation bar styling */
+nav {
+    background-color: #0A0A0A;
+    padding: 10px 20px;
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: #00FFFF; /* Neon cyan */
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #FF00FF; /* Neon pink */
+    text-shadow: 0 0 10px #FF00FF, 0 0 20px #FF00FF;
+}
+
+/* Main section styling */
+main {
+    padding: 40px 20px;
+}
+
+.game-detail {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #0A3044; /* Softer blue-black for content area */
+    padding: 30px;
+    border-radius: 12px;
+    border: 2px solid #FF00FF; /* Neon pink border */
+    box-shadow: 0 6px 12px rgba(255, 0, 255, 0.4); /* Pink neon shadow */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.game-detail:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 6px 20px rgba(255, 0, 255, 0.7); /* Stronger glow on hover */
+}
+
+/* Game image styling */
+.game-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.5); /* Pink neon glow around the image */
+    transition: box-shadow 0.3s ease;
+}
+
+.game-image:hover {
+    box-shadow: 0 0 40px rgba(255, 0, 255, 0.8); /* Stronger glow on hover */
+}
+
+/* Headings */
+h2 {
+    font-size: 2.5rem;
+    color: #FF00FF; /* Neon pink for headings */
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #FF00FF, 0 0 20px #FF00FF; /* Glowing neon effect */
+}
+
+h3 {
+    font-size: 1.8rem;
+    color: #00FFFF; /* Neon cyan for subheadings */
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-shadow: 0 0 10px #00FFFF, 0 0 20px #00FFFF; /* Glowing neon effect */
+}
+
+/* Paragraph and list styles */
+p {
+    font-size: 1.2rem;
+    color: #00FFFF; /* Neon cyan for text */
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin-top: 20px;
+}
+
+ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    position: relative;
+    color: #00FFFF; /* Neon cyan for list items */
+}
+
+ul li::before {
+    content: '•';
+    color: #FF00FF; /* Neon pink bullets */
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Footer styling */
+footer {
+    background-color: #0A0A0A; /* Dark footer background */
+    color: #00FFFF; /* Neon cyan for footer text */
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 10px rgba(255, 0, 255, 0.5); /* Pink neon glow for footer */
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .game-image {
+        width: 100%; /* Full width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    footer p {
+        font-size: 0.9rem; /* Adjust footer font size for mobile */
+    }
+}

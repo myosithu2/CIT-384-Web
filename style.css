@@ -1,0 +1,113 @@
+/* General body styling */
+body {
+    font-family: 'Verdana', sans-serif;
+    background-color: #121212; /* Dark grey for easier viewing */
+    color: #E0E0E0; /* Soft light grey for better readability */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header and footer styles */
+header, footer {
+    background-color: #282828; /* Soft dark grey background */
+    color: #00A1D6; /* Softer blue for visibility and gamer style */
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+header h1 {
+    font-size: 2.5em;
+    text-shadow: 0 0 10px #00A1D6, 0 0 20px #00A1D6; /* Glowing text effect with softer blue */
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+/* Main game list section */
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+ul.game-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+ul.game-list li {
+    flex: 1 1 30%; /* Each game takes 30% of the row, and they can wrap */
+    margin: 15px;
+    padding: 20px;
+    border: 2px solid #555; /* Slightly lighter border for contrast */
+    border-radius: 15px;
+    background: linear-gradient(145deg, #333, #222); /* Slight gradient for depth */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6), -5px -5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+ul.game-list li:hover {
+    transform: translateY(-10px); /* Game cards pop up slightly on hover */
+    border-color: #00A1D6; /* Softer blue border on hover */
+}
+
+/* Game link styling */
+ul.game-list li a {
+    text-decoration: none;
+    color: #00A1D6; /* Softer blue text for links */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul.game-list li a:hover {
+    color: #02C8F8; /* Lighter blue on hover */
+}
+
+.game-icon {
+    font-size: 80px; /* Game icon size */
+    margin-bottom: 15px;
+    color: #00A1D6; /* Softer blue for the icons */
+}
+
+/* Social icons styling */
+footer a {
+    margin-right: 15px;
+    font-size: 36px;
+    color: #00A1D6; /* Softer blue for social icons */
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #02C8F8; /* Lighter blue on hover */
+}
+
+/* Media queries for mobile responsiveness */
+@media (max-width: 768px) {
+    ul.game-list li {
+        flex: 1 1 45%; /* Each game takes up 45% of the row on medium screens */
+    }
+
+    .game-icon {
+        font-size: 60px; /* Adjust icon size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    ul.game-list li {
+        flex: 1 1 100%; /* Full-width game cards on small screens */
+    }
+
+    .game-icon {
+        font-size: 50px; /* Further adjust icon size for smaller screens */
+    }
+}

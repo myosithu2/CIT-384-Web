@@ -1,0 +1,181 @@
+/* General body styling */
+body {
+    background-color: #1E1E3F; /* Dark purple-blue for a neon-lit cyberpunk atmosphere */
+    color: #E0E0E0; /* Light gray for neutral text */
+    font-family: 'Roboto', sans-serif; /* Modern, clean font */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+header {
+    background-color: #0A0A0A; /* Darker background for header */
+    color: #00FFFF; /* Neon cyan for header text */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 4px solid #7A00FF; /* Neon purple border */
+    box-shadow: 0 0 10px #7A00FF; /* Purple neon glow for header */
+}
+
+h1 {
+    margin: 0;
+    font-size: 3rem;
+    text-shadow: 0 0 15px #00FFFF, 0 0 30px #00FFFF; /* Neon glow for main heading */
+}
+
+/* Navigation bar styling */
+nav {
+    background-color: #0A0A0A; /* Dark background for navbar */
+    padding: 10px 0;
+    box-shadow: 0 2px 10px rgba(0, 255, 255, 0.5); /* Neon cyan glow */
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: #00FFFF; /* Neon cyan for links */
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #7A00FF; /* Neon purple on hover */
+    text-shadow: 0 0 10px #7A00FF, 0 0 20px #7A00FF;
+}
+
+/* Main section styling */
+main {
+    padding: 40px 20px;
+}
+
+.game-detail {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: rgba(30, 30, 63, 0.8); /* Semi-transparent dark purple-blue */
+    padding: 30px;
+    border-radius: 12px;
+    border: 3px solid #7A00FF; /* Neon purple border */
+    box-shadow: 0 6px 12px rgba(122, 0, 255, 0.6); /* Neon purple glow shadow */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.game-detail:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 6px 20px rgba(122, 0, 255, 0.8); /* Stronger neon glow on hover */
+}
+
+/* Game image styling */
+.game-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.4); /* Cyan glow around image */
+    transition: box-shadow 0.3s ease;
+}
+
+.game-image:hover {
+    box-shadow: 0 0 40px rgba(0, 255, 255, 0.7); /* Stronger cyan glow on hover */
+}
+
+/* Headings */
+h2 {
+    font-size: 2.5rem;
+    color: #00FFFF; /* Neon cyan for subheadings */
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #00FFFF, 0 0 20px #00FFFF; /* Neon glowing effect */
+}
+
+h3 {
+    font-size: 1.8rem;
+    color: #ADFF2F; /* Neon green-yellow for subheadings */
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-shadow: 0 0 10px #ADFF2F, 0 0 20px #ADFF2F; /* Slight glowing effect */
+}
+
+/* Paragraph and list styles */
+p {
+    font-size: 1.2rem;
+    color: #ADFF2F; /* Neon green-yellow for paragraphs */
+    line-height: 1.6;
+    text-shadow: 0 0 5px #ADFF2F, 0 0 10px #ADFF2F; /* Slight glowing effect */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin-top: 20px;
+}
+
+ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    position: relative;
+    color: #ADFF2F; /* Neon green-yellow for list items */
+}
+
+ul li::before {
+    content: '•';
+    color: #00FFFF; /* Neon cyan bullet points */
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Footer styling */
+footer {
+    background-color: #0A0A0A; /* Dark footer background */
+    color: #00FFFF; /* Neon cyan for footer text */
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 10px rgba(122, 0, 255, 0.5); /* Purple neon glow for footer */
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Hover effect for footer links */
+footer a {
+    color: #00FFFF; /* Neon cyan for social links */
+    font-size: 1.5rem;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #66FFFF; /* Lighter neon cyan on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .game-image {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    a, button {
+        padding: 10px 20px; /* Smaller buttons for mobile */
+    }
+}
